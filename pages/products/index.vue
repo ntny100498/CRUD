@@ -21,8 +21,7 @@ export default {
       product: {},
       productDialog: false,
       submitted: false,
-      deleteProductDialog: false,
-      hihi: null
+      deleteProductDialog: false
     }
   },
   productService: null,
@@ -91,7 +90,7 @@ export default {
       this.product = {};
     },
     editProduct(data) {
-      this.product = {...data};
+      this.product = data;
       this.productDialog = true;
     },
     fetchData(){
