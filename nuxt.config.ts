@@ -7,5 +7,10 @@ export default defineNuxtConfig({
   ],
   build: {
   transpile: ['primevue']
+  },
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: process.env.API_BASE_URL
+    }
   }
 })
